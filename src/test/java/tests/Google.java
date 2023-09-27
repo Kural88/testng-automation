@@ -16,5 +16,12 @@ public class Google {
         Driver.getDriver().findElement(By.name("q")).sendKeys(testData + Keys.ENTER);
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue("Title failed", title.contains(testData));
+        Driver.quit();
     }
-}
+
+    @Test
+    public void googleImage(){
+        Driver.getDriver().get("https://google.com");
+        System.out.println("Checking some images");
+
+}}
