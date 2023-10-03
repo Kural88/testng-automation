@@ -12,4 +12,6 @@ public class AmazonHomePage {
     }
     @FindBy(id = "something")
     public WebElement login;
+
+
 }
